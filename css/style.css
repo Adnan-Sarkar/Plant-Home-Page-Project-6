@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.hero {
+    background-color: #F4F3F8;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* navbar */
+nav {
+    padding-top: 30px;
+    height: 10vh;
+}
+nav .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-content .brand {
+    width: 6%;
+}
+
+nav .nav-content .brand img {
+    width: 100%;
+}
+
+nav .nav-content .menu-item {
+    width: 85%;
+}
+
+nav .nav-content .menu-item ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-content .menu-item ul li {
+    margin-right: 80px;
+}
+
+nav .nav-content .menu-item ul li:last-child {
+    margin-right: 0;
+}
+
+nav .nav-content .menu-item ul li a {
+    font-size: 20px;
+    font-family: "Allerta", sans-serif;
+    color: #000;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+nav .nav-content .menu-item ul li a:hover {
+    border-color: #000;
+} 
+
+nav .nav-content .nav-right {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* hero-content */
+.hero-content {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content .hero-content-left {
+    width: 60%;
+}
+
+.hero-content .hero-content-left .banner-text {
+    position: relative;
+}
+
+.banner-text .dot {
+    position: absolute;
+    top: 25%;
+    left: -4%;
+}
+
+.banner-text .dot span {
+    display: block;
+    margin-top: 15px;
+}
+
+.banner-text .dot span::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-clip: content-box;
+    padding: 1px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 1px solid #fff;
+    
+}
+
+.banner-text .dot span:first-child::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-clip: content-box;
+    padding: 1px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+
+.hero-content .hero-content-left .banner-text h1 {
+    font-size: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.hero-content .hero-content-left .banner-text P {
+    width: 50%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.hero-content .hero-content-left .hero-btn {
+    display: inline-block;
+    margin-bottom: -50px;
+}
+
+.hero-content .hero-content-left .hero-btn a {
+    background-color: #466D50;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 18px 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.hero-content .hero-content-left .hero-btn a img {
+    margin-left: 20px;
+}
+
+.hero-features {
+    width: 80%;
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-features .single-feature {
+    display: flex;
+}
+
+.hero-features .single-feature .feature-content {
+    margin-left: 10px;
+}
+
+.hero-features .single-feature .feature-content h4 {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.hero-features .single-feature .feature-content p {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.hero-content-right {
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+
+.hero-content-right img {
+    position: absolute;
+    top: 14px;
+    right: -96px;
+}
